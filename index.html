@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 500px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .weather-info {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Weather App</h2>
+        <div class="form-group">
+            <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+        </div>
+        <button id="getWeatherBtn" class="btn btn-primary btn-block">Get Weather</button>
+        <div class="weather-info mt-4">
+            <h4 id="cityName"></h4>
+            <p id="weatherDescription"></p>
+            <p>Temperature: <span id="temperature"></span> °C</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
